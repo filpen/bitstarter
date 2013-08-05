@@ -2,22 +2,19 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Seatbelt - Pair Programming Hub</title>
+        <title>Seatbelt - Virtual Pair Programming Hub</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
         <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
         <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
-        <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script><script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
         <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
         <style type="text/css">
 
             /* Large desktop */
             @media (min-width: 980px) {
-                body {
-                    padding-top: 60px;
-                }
                 .linediv-l {
                     border-right: 1px white solid;
                 }
@@ -48,7 +45,6 @@
             .heading, .subheading {
                 font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
                 text-align: center;
-                /*background-color: #33CC99;*/
                 background-image: url(http://res.cloudinary.com/seatbelt/image/upload/c_scale,w_1600/c_crop,h_700,w_1600/v1375693148/http_unsplash_s3_amazonaws_com_batch_205_unsplash-kitsune-3_t7fkof.jpg);
                 background-size: cover;
                 background-position: center;
@@ -125,44 +121,34 @@
         </script>
     </head>
     <body>
-
-        <!-- Mobile friendly navbar adopted from example. -->
-        <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar navbar-inverse navbar-static-top">
             <div class="navbar-inner">
                 <div class="container">
-                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="brand" href="#">Seatbelt Bitstarter</a>
-                    <div class="nav-collapse collapse">
-                        <ul class="nav">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div><!--/.nav-collapse -->
+                    <a class="navbar-brand" href="#">Seatbelt Bitstarter</a>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                      </ul>
                 </div>
             </div>
         </div>
 
-        <!-- We use row-fluid inside containers to achieve a resizable layout. -->
+        <!-- We use row inside containers to achieve a resizable layout. -->
         <div class="container">
             <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
-            <div class="row-fluid headings">
-                <div class="span12">
+            <div class="row headings">
+                <div class="col-lg-12">
                     <h1>Seatbelt</h1>
                 </div>
             </div>
-            <div class="row-fluid subheading">
-                <div class="span12">
+            <div class="row subheading">
+                <div class="col-lg-12">
                     <h1>Announcing a new way to improve your technical skills: together, anywhere, for free.</h1>
                     <p class="lead">Get and give help with software development tasks, remotely, via virtual pair programming.</p>
                 </div>
-                <div class="row-fluid">
-                        <div class="span8 offset2">
+                <div class="row">
+                        <div class="col-lg-8 col-offset-2">
                             <div class="statistics">
                                 <p>
                                     Spread the word!
@@ -170,8 +156,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row-fluid">
-                        <div class="span8 offset2 social">
+                    <div class="row">
+                        <div class="col-lg-8 col-offset-2 social">
                             <!-- AddThis Button BEGIN -->
                             <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
                             <a class="addthis_button_facebook"></a>
@@ -186,11 +172,11 @@
             </div>
 
             <!-- Beyond this part the marketing copy begins. -->
-            <div class="row-fluid section1">
-                <div class="span5 offset1 asset">
-                    <img class="img-polaroid" src="http://res.cloudinary.com/seatbelt/image/upload/c_scale,w_390/v1375693162/http_unsplash_s3_amazonaws_com_batch_203_doctype-hi-res_rc0nui.jpg" width="400" height="400" alt="Pair programming">
+            <div class="row section1">
+                <div class="col-lg-5 col-offset-1 asset">
+                    <img class="img-thumbnail" src="http://res.cloudinary.com/seatbelt/image/upload/c_scale,w_390/v1375693162/http_unsplash_s3_amazonaws_com_batch_203_doctype-hi-res_rc0nui.jpg" width="400" height="400" alt="Pair programming">
                 </div>
-                <div class="span5 copy">
+                <div class="col-lg-5 copy">
                     <p>
                         Do you need help with a programming task and nobody but your cat is around? Would you like to start contributing to open source but the task looks overwhelming? Do you feel like helping or mentoring a developer?
                     </p>
@@ -200,28 +186,28 @@
                 </div>
             </div>
 
-            <div class="row-fluid section2">
-                <div class="span5 offset1 copy copy-right" id="about">
+            <div class="row section2">
+                <div class="col-lg-10 col-offset-1 copy" id="about">
                     <h3>How it works</h3>
-                    <ul class="list-group">
-                        <li class="list-group-item">Post a request for help, or navigate through available requests.</li>
-                        <li class="list-group-item">
-                            When you receive an offer for help with your request, or when you find a request you think you can help with, contact your partner and schedule a meeting.
-                        </li>
-                        <li class="list_group_item">
-                            Hack together on the task at hand, learn and have fun!
-                        </li>
-                    </ul>
-                </div>
-                <div class="span5 asset">
-                    <a href="http://imgur.com/s70trYe"><img class="img-polaroid" src="http://i.imgur.com/s70trYe.png" title="Hosted by imgur.com" alt="Request form mockup" /></a>
+                   <!--  <div class="row col-lg-4 panel">
+                        <p>Post a request for help, or navigate through available requests.</p>
+                    </div>
+                    <div class="row col-lg-4 panel">
+                        <p>Got an offer or found a request? Schedule a meeting with your partner.</p>
+                    </div>
+                    <div class="row col-lg-4 panel">
+                        <p>Hack together on the task at hand, learn and have fun!</p>
+                    </div> -->
+                    <ol class="list-group">
+                        <li class="list-group-item"><p>I. Post a request for help, or navigate through available requests.</p></li>
+                        <li class="list-group-item"><p>II. Got an offer or found a request? Schedule a meeting with your partner.</p></li>
+                        <li class="list-group-item"><p>III. Hack together on the task, learn and have fun!</p></li>
+                    </ol>
                 </div>
             </div>
 
-            <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
-            <!-- This brings in jquery.js and bootstrap.js as dependencies -->
-            <div class="row-fluid faq">
-                <div class="span10 offset1">
+            <div class="row faq">
+                <div class="col-lg-10 offset1">
                     <h3>FAQ</h3>
                     <div class="accordion" id="accordion2">
                         <div class="accordion-group">
@@ -253,15 +239,15 @@
 
             </div>
 
-            <div class="row-fluid" id="contact">
-                <div class="span12 contact">
+            <div class="row" id="contact">
+                <div class="col-lg-12 contact">
                     <i class="icon-twitter"></i> <a href="http://twitter.com/SeatbeltIO">@SeatbeltIO</a> |
                     <i class="icon-envelope"></i> <a href="mailto:info@seatbelt.io">info@seatbelt.io</a>
                 </div>
             </div>
 
-            <div class="row-fluid footer">
-                <div class="span12">
+            <div class="row footer">
+                <div class="col-lg-12">
                     <p>This work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a></p>
                 </div>
             </div>
