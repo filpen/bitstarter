@@ -3,6 +3,7 @@ var pg = require('pg').native
   , client
   , query;
 
+console.log(connectionString);
 client = new pg.Client(connectionString);
 client.connect();
 query = client.query('CREATE TABLE contact (email varchar(254))');
