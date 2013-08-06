@@ -5,11 +5,12 @@
         <title>Seatbelt - Virtual Pair Programming Hub</title>
         <meta name="description" content="Remote pair programming with developers anywhere in the world, for free.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="http://malsup.github.io/min/jquery.form.min.js"></script>
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
         <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
-        <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script><script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
         <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
         <style type="text/css">
@@ -199,6 +200,24 @@
             </div>
 
             <div class="row">
+                <div class="col-lg-10 col-offset-1 copy collapse-group">
+                    <form id="email_form" name="email_form" method="POST" action="">
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="address" placeholder="Enter your email address">
+                          <span class="input-group-btn">
+                            <button class="btn btn-default" id="submit-btn" type="submit" data-toggle="collapse" data-target="#success">Get started!</button>
+                          </span>
+                        </div><!-- /input-group -->
+                        <div class="collapse" id="success">
+                            <p class="alert alert-success">
+                                <strong>Thank you!</strong> We did not launch yet, but we will get back at you as soon as we do.
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row">
                 <div class="col-lg-10 col-offset-1 copy">
                     <h3>The indifference bubble</h3>
                     <p>
@@ -269,6 +288,27 @@
 
             ga('create', 'UA-42897584-1', 'seatbelt.io');
             ga('send', 'pageview');
+        </script>
+        <script>
+            $(document).ready(function() {
+              $("#email_form").ajaxForm({ beforeSubmit: showRequest});
+
+
+            });
+
+            function showRequest(formData, jqForm, options) {
+                // formData is an array; here we use $.param to convert it to a string to display it
+                // but the form plugin does this for you automatically when it submits the data
+                var queryString = $.param(formData);
+
+                $.ajax({
+                    type: "POST",
+                    url: "/",
+                    data: queryString
+                });
+
+                return false;
+            }
         </script>
     </body>
 </html>
