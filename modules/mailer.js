@@ -7,11 +7,10 @@ client.connect(function(error) {
 });
 
 exports.save = function(email_address, callback) {
-        console.log(email_address);
         var query = client.query("SELECT email FROM contact WHERE email = $1", [email_address]);
 
         query.on('end', function(result) {
-            if (!result.rows.length) {
+            if (!result.rowCount) {
                 console.log('Insert new address');
                 client.query('INSERT INTO contact VALUES ($1)', [email_address]);
             }

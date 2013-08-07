@@ -122,6 +122,8 @@
                 background-image: linear-gradient(#f9cf99, #f3a239);
                 border-color: #f3a239 #f3a239 hsl(34, 89%, 54%);
                 color: #333 !important;
+                font-size: 18px;
+                font-weight: bold;
                 text-shadow: 0 1px 1px rgba(255, 255, 255, 0.33);
                 -webkit-font-smoothing: antialiased;
             }
@@ -162,7 +164,7 @@
             </div>
             <div class="row subheading">
                 <div class="col-lg-12">
-                    <h1>Announcing a new way to improve your technical skills: together, anywhere, for free.</h1>
+                    <h1>Announcing a new way to improve your development skills: together, anywhere, for free.</h1>
                     <p class="lead">Get and give help with software development tasks, remotely, via virtual pair programming.</p>
                 </div>
                 <div class="row">
@@ -177,7 +179,7 @@
                     <div class="row">
                         <div class="col-lg-8 col-offset-2 social">
                             <!-- AddThis Button BEGIN -->
-                            <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+                            <div class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:title="Seatbelt: a new way to improve your development skills: together, anywhere, for free" addthis:url="http://seatbelt.io">
                             <a class="addthis_button_facebook"></a>
                             <a class="addthis_button_twitter"></a>
                             <a class="addthis_button_google_plusone_share"></a>
@@ -216,17 +218,26 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-10 col-offset-1 copy collapse-group">
+                <div class="col-lg-10 col-offset-1 collapse-group">
                     <form id="email_form" name="email_form" method="POST" action="">
                         <div class="input-group">
-                          <input type="text" class="form-control" name="address" placeholder="Enter your email address">
+                          <input type="email" class="form-control input-large" name="address" placeholder="Enter your email address">
                           <span class="input-group-btn">
-                            <button class="btn btn-custom" id="submit-btn" type="submit" data-toggle="collapse" data-target="#success">Get started!</button>
+                            <button class="btn btn-custom input-large" id="submit-btn" type="submit" data-toggle="collapse" data-target="#success">Get started!</button>
                           </span>
                         </div><!-- /input-group -->
                         <div class="collapse" id="success">
                             <p class="alert alert-success">
-                                <strong>Thank you!</strong> We did not launch yet, but we will get back at you as soon as we do.
+                                <strong>Thank you, you are awesome!</strong> We will launch very soon and we will get back at you as soon as we do. In the meanwhile, help us spread the word!
+                                <!-- AddThis Button BEGIN -->
+                                <div class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:title="Seatbelt: a new way to improve your development skills: together, anywhere, for free" addthis:url="http://seatbelt.io">
+                                <a class="addthis_button_facebook"></a>
+                                <a class="addthis_button_twitter"></a>
+                                <a class="addthis_button_google_plusone_share"></a>
+                                </div>
+                                <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+                                <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fab3b40ea0f2e9"></script>
+                                <!-- AddThis Button END -->
                             </p>
                         </div>
                     </form>
