@@ -109,6 +109,22 @@
                 width: 108px;
                 margin: 0 auto;
             }
+            .btn-custom {
+                background-color: hsl(34, 89%, 59%) !important;
+                background-repeat: repeat-x;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f9cf99", endColorstr="#f3a239");
+                background-image: -khtml-gradient(linear, left top, left bottom, from(#f9cf99), to(#f3a239));
+                background-image: -moz-linear-gradient(top, #f9cf99, #f3a239);
+                background-image: -ms-linear-gradient(top, #f9cf99, #f3a239);
+                background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9cf99), color-stop(100%, #f3a239));
+                background-image: -webkit-linear-gradient(top, #f9cf99, #f3a239);
+                background-image: -o-linear-gradient(top, #f9cf99, #f3a239);
+                background-image: linear-gradient(#f9cf99, #f3a239);
+                border-color: #f3a239 #f3a239 hsl(34, 89%, 54%);
+                color: #333 !important;
+                text-shadow: 0 1px 1px rgba(255, 255, 255, 0.33);
+                -webkit-font-smoothing: antialiased;
+            }
         </style>
         <script type="text/javascript">
             var _gaq = _gaq || [];
@@ -205,7 +221,7 @@
                         <div class="input-group">
                           <input type="text" class="form-control" name="address" placeholder="Enter your email address">
                           <span class="input-group-btn">
-                            <button class="btn btn-default" id="submit-btn" type="submit" data-toggle="collapse" data-target="#success">Get started!</button>
+                            <button class="btn btn-custom" id="submit-btn" type="submit" data-toggle="collapse" data-target="#success">Get started!</button>
                           </span>
                         </div><!-- /input-group -->
                         <div class="collapse" id="success">
