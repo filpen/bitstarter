@@ -223,7 +223,7 @@
                         <div class="input-group">
                           <input type="email" class="form-control input-large" name="address" placeholder="Enter your email address">
                           <span class="input-group-btn">
-                            <button class="btn btn-custom input-large" id="submit-btn" type="submit" data-toggle="collapse" data-target="#success" onClick="_gaq.push(['_trackEvent', 'Email', 'GetStarted']);">Get started!</button>
+                            <button class="btn btn-custom input-large" id="submit-btn" type="submit" data-toggle="collapse" data-target="#success">Get started!</button>
                           </span>
                         </div><!-- /input-group -->
                         <div class="collapse" id="success">
@@ -324,6 +324,7 @@
             });
 
             function showRequest(formData, jqForm, options) {
+                _gaq.push(['_trackEvent', 'Email', 'GetStarted']);
                 // formData is an array; here we use $.param to convert it to a string to display it
                 // but the form plugin does this for you automatically when it submits the data
                 var queryString = $.param(formData);
