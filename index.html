@@ -47,12 +47,14 @@
             .heading, .subheading {
                 font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
                 text-align: center;
+                padding: 70px 0px 40px 0px;
+                color: white;
+                text-shadow: 0 0 15px rgba(0,0,0,0.6),0 -1px 1px rgba(0,0,0,0.6);
+            }
+            .jumbotron {
                 background-image: url(http://res.cloudinary.com/seatbelt/image/upload/c_scale,w_1600/c_crop,h_700,w_1600/v1375693148/http_unsplash_s3_amazonaws_com_batch_205_unsplash-kitsune-3_t7fkof.jpg);
                 background-size: cover;
                 background-position: center;
-                padding: 70px 0px 40px 0px;
-                color:white;
-                text-shadow: 0 0 15px rgba(0,0,0,0.6),0 -1px 1px rgba(0,0,0,0.6);
             }
             p.lead {
                 padding-top: 1.5%;
@@ -144,7 +146,7 @@
         <div class="navbar navbar-inverse navbar-static-top">
             <div class="navbar-inner">
                 <div class="container">
-                    <a class="navbar-brand" href="#">Seatbelt Bitstarter</a>
+                    <a class="navbar-brand" href="#">Seatbelt</a>
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#">Home</a></li>
                         <li><a href="#about">About</a></li>
@@ -162,38 +164,25 @@
                     <h1>Seatbelt</h1>
                 </div>
             </div>
-            <div class="row subheading">
-                <div class="col-lg-12">
-                    <h1>Announcing a new way to improve your development skills: together, anywhere, for free.</h1>
-                    <p class="lead">Get and give help with software development tasks, remotely, via virtual pair programming.</p>
+            <div class="jumbotron">
+              <div class="container subheading">
+                <h1>Develop together, anywhere, for free.</h1>
+                <p>Find a remote pair programming partner.</p>
+                <!-- AddThis Button BEGIN -->
+                <div class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:title="Seatbelt: a new way to improve your development skills: together, anywhere, for free" addthis:url="http://seatbelt.io">
+                <a class="addthis_button_facebook"></a>
+                <a class="addthis_button_twitter"></a>
+                <a class="addthis_button_google_plusone_share"></a>
                 </div>
-                <div class="row">
-                        <div class="col-lg-8 col-offset-2">
-                            <div class="statistics">
-                                <p>
-                                    Spread the word!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-8 col-offset-2 social">
-                            <!-- AddThis Button BEGIN -->
-                            <div class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:title="Seatbelt: a new way to improve your development skills: together, anywhere, for free" addthis:url="http://seatbelt.io">
-                            <a class="addthis_button_facebook"></a>
-                            <a class="addthis_button_twitter"></a>
-                            <a class="addthis_button_google_plusone_share"></a>
-                            </div>
-                            <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-                            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fab3b40ea0f2e9"></script>
-                            <!-- AddThis Button END -->
-                        </div>
-                    </div>
+                <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+                <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fab3b40ea0f2e9"></script>
+                <!-- AddThis Button END -->
+              </div>
             </div>
 
             <!-- Beyond this part the marketing copy begins. -->
             <div class="row section1">
-                <div class="col-lg-5 col-offset-1 copy">
+                <div class="col-lg-6 copy">
                     <p>
                         Do you need help with a programming task and nobody but your cat is around? Would you like to start contributing to open source but the task looks overwhelming? Do you feel like helping or mentoring a developer?
                     </p>
@@ -201,14 +190,14 @@
                         Seatbelt is the meeting point for developers looking for help and offering support using pair programming. Schedule a meeting and start hacking together with your partner!
                     </p>
                 </div>
-                <div class="col-lg-5 asset">
-                    <img class="img-thumbnail" src="http://res.cloudinary.com/seatbelt/image/upload/c_scale,w_390/v1375693162/http_unsplash_s3_amazonaws_com_batch_203_doctype-hi-res_rc0nui.jpg" width="400" height="400" alt="Pair programming">
+                <div class="col-lg-6 asset">
+                    <img class="img-thumbnail" src="http://res.cloudinary.com/seatbelt/image/upload/c_scale,w_800/v1375693162/http_unsplash_s3_amazonaws_com_batch_203_doctype-hi-res_rc0nui.jpg" alt="Pair programming">
                 </div>
             </div>
 
             <div class="row section2">
-                <div class="col-lg-10 col-offset-1 copy" id="about">
-                    <h3>How it works</h3>
+                <div class="col-lg-12 copy" id="about">
+                    <h2>How it works</h3>
                     <ol class="list-group">
                         <li class="list-group-item"><p>1. Post a request for help, or navigate through available requests.</p></li>
                         <li class="list-group-item"><p>2. Got an offer or found a request? Schedule a meeting with your partner.</p></li>
@@ -218,12 +207,12 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-10 col-offset-1 collapse-group">
+                <div class="col-lg-12 collapse-group">
                     <form id="email_form" name="email_form" method="POST" action="">
                         <div class="input-group">
                           <input type="email" class="form-control input-large" name="address" placeholder="Enter your email address">
                           <span class="input-group-btn">
-                            <button class="btn btn-custom input-large" id="submit-btn" type="submit" data-toggle="collapse" data-target="#success">Get started!</button>
+                            <button class="btn btn-custom input-large" id="submit-btn" type="submit" data-toggle="collapse" data-target="#success">Subscribe</button>
                           </span>
                         </div><!-- /input-group -->
                         <div class="collapse" id="success">
@@ -244,9 +233,38 @@
                 </div>
             </div>
 
+            <div class="row copy">
+                <div class="col-lg-4">
+                    <h2>Grow</h2>
+                    <p>You have the experience of another developer at your disposal: use it wisely. Even if you pair during your day job, pairing with people with a completely different background on the same technology is a very different learning experience. </p>
+                </div>
+                <div class="col-lg-4">
+                    <h2>Get involved</h2>
+                    <p>Not everyone lives near a tech hub. You are not stimulated enough to write in your blog every day. Heck, you don't even have a blog! Get in touch with other developers, hack together and make development fun again. </p>
+                </div>
+                <div class="col-lg-4">
+                    <h2>Code review</h2>
+                    <p>Having another pair of eyes looking over the code helps you prevent making bad design decisions early on. The earlier issues are discovered, the better it is: that is why instant code reviews are much more efficient than offline reviews.</p>
+                </div>
+            </div>
+            <div class="row copy">
+                <div class="col-lg-4">
+                    <h2>Learn</h2>
+                    <p>You are a master of .NET? That's great! Come and play with JavaScript, RoR, Scala, Clojure... Make yourself uncomfortable. Find an experienced developer to help you to get started the right way! </p>
+                </div>
+                <div class="col-lg-4">
+                    <h2>Got a problem?</h2>
+                    <p>If you are stuck and stackoverflow keeps closing your questions because they are too broad, find somebody to help you out. Sometimes you just need a little bit of input from somebody who understands what you are trying to accomplish. </p>
+                </div>
+                <div class="col-lg-4">
+                    <h2>Tutorials</h2>
+                    <p>Seatbelt starts where the tutorials end. You just finished reading a book about a cool tech, now you stare at an empty editor wondering where to begin. Grab an experienced developer and start hacking together! </p>
+                </div>
+            </div>
+
             <div class="row">
-                <div class="col-lg-10 col-offset-1 copy">
-                    <h3>The indifference bubble</h3>
+                <div class="col-lg-12 copy">
+                    <h2>Escape the indifference bubble</h3>
                     <p>
                         If you don't live close to a major high-tech hub, you know the problem. You read books and blog posts and are excited about new ideas. You go to as many conferences as you can. If you are lucky, you might even attend courses taught by very talented people. But you feel isolated.
                     </p>
@@ -257,39 +275,6 @@
                         But you want more. And you are not alone. There are other people like you around the world, but they are also trapped in an indifference bubble. They want out. You want out. Fasten your seat belt, because you are about to break out of the bubble. Together.
                     </p>
                 </div>
-            </div>
-
-            <div class="row faq">
-                <div class="col-lg-10 col-offset-1">
-                    <h3>FAQ</h3>
-                    <div class="accordion" id="accordion2">
-                        <div class="accordion-group">
-                            <div class="accordion-heading">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                                    Why would I want to get help from other developers?
-                                </a>
-                            </div>
-                            <div id="collapseOne" class="accordion-body collapse">
-                                <div class="accordion-inner">
-                                    While I am sure you can program it all by yourself, working together is the most efficient way to build your technical chops. Learn in a controlled environment with a fast feedback cycle – discuss technical decisions with your partner and find out about possible issues before they come back months or years later to bite you.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-group">
-                            <div class="accordion-heading">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                                    Why would I want to help other developers?
-                                </a>
-                            </div>
-                            <div id="collapseTwo" class="accordion-body collapse">
-                                <div class="accordion-inner">
-                                    You have a chance to help a fellow developer, who will then be extremely grateful to you and will write about you in his personal diary. If that's not enough, do not underestimate the amount of knowledge you get by simply helping. It will motivate you to investigate technical issues that you might have not directly experienced.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
 
             <div class="row" id="contact">
@@ -318,9 +303,10 @@
         </script>
         <script>
             $(document).ready(function() {
-              $("#email_form").ajaxForm({ beforeSubmit: showRequest});
-
-
+                $("#email_form").ajaxForm({ beforeSubmit: showRequest});
+                $(document).ajaxError(function(event, request, settings) {
+                    console.log( 'Server returned '+request.status+': '+request.statusText );
+                });
             });
 
             function showRequest(formData, jqForm, options) {
@@ -332,7 +318,10 @@
                 $.ajax({
                     type: "POST",
                     url: "/",
-                    data: queryString
+                    data: queryString,
+                    error: function(xmlReq, txtStatus, errThrown){
+                         $('#email_form').text(xmlReq.responseText).addClass('errorBox');
+                       }
                 });
 
                 return false;
